@@ -1,0 +1,85 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide empty members
+class Tower
+{
+- List<Flyable*> observers
++void register(Flyable* p_flyable)
++void unregister(Flyable* p_flyable)
+#void conditionChanged()
+}
+
+class WeatherTower
+{
++string getWeather(Coordinates p_coordinates)
++void changeWeather()
+}
+
+class WeatherProvider <<Singleton>>
+{
+-string[] weather
+-WeatherProvider()
++string getCurrentWeather(Coordinates p_coordinates)
+}
+
+class Coordinates
+{
+-int longitude
+-int latitute
+-int height
+~Coordinates(int p_longitude, int p_latitude, int p_height)
++int getLongitude()
++int getLatitude()
++int getHeight()
+}
+
+class Aircraft
+{
+#long id
+#string name
+#Coordinate coordinates
+#Aircraft(long p_id, string p_name, Coordinates p_coordinate)
+}
+
+abstract Flyable
+{
+#WeatherTower weatherTower
++abstract void updateConditions()
++registerTower(WeatherTower* p_tower)
+}
+
+class Helicopter
+{
++Helicopter(long p_id, string p_name, Coordinates p_coordinate)
++void updateConditions()
+}
+
+class JetPlane
+{
++JetPlane(long p_id, string p_name, Coordinates p_coordinate)
++void updateConditions()
+}
+
+class Baloon
+{
++Baloon(long p_id, string p_name, Coordinates p_coordinate)
++void updateConditions()
+}
+
+class AircraftFactory <<Singleton>>
+{
++Flyable* newAircraft(string p_type, string p_name, Coordinates p_coordinates)
+}
+
+Tower <|-- WeatherTower
+Tower -o Flyable
+Coordinates -* Aircraft
+Flyable <|.. Aircraft 
+Aircraft <|-- Helicopter
+Aircraft <|-- JetPlane
+Aircraft <|-- Baloon
+
+JetPlane -[hidden]- AircraftFactory
+WeatherTower -[hidden]- WeatherProvider
+
+@enduml
