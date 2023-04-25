@@ -1,5 +1,4 @@
 package srcs;
-import srcs.Coordinates;
 
 public class Aircraft extends Flyable {
     protected long id;
@@ -10,7 +9,9 @@ public class Aircraft extends Flyable {
         this.name = p_name;
         this.coordinates = p_coordinates;
     }
-    
+    public long getid() {
+        return this.id;
+    }
     @Override
     public void updateConditions() {
         // TODO Auto-generated method stub 
