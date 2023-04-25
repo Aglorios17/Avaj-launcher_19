@@ -13,7 +13,7 @@ public class Aircraft extends Flyable {
     
     @Override
     public void updateConditions() {
-        // TODO Auto-generated method stub
+        // TODO Auto-generated method stub 
         throw new UnsupportedOperationException("Unimplemented method 'updateConditions'");
     }
 }
