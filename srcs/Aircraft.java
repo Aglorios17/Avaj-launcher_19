@@ -1,7 +1,7 @@
 package srcs;
 import srcs.Coordinates;
 
-public class Aircraft {
+public class Aircraft implements Flyable {
     protected long id;
     protected String name;
     protected Coordinates coordinates;
