@@ -6,17 +6,6 @@ import java.util.ArrayList;
 import srcs.AircraftFactory;
 
 public class Simulator {   
-    public static boolean isNumeric(String str) {
-        if (str == null) {
-            return false;
-        }
-        try {
-            Double.parseDouble(str);
-            return true;
-        } catch (NumberFormatException nfe) {
-            return false;
-        }
-    }
     public static void main(String[] args) {
         try {
             int count = 0;
