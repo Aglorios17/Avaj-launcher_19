@@ -1,7 +1,7 @@
 package srcs;
 import srcs.Coordinates;
 
-public class Aircraft implements Flyable {
+public class Aircraft extends Flyable {
     protected long id;
     protected String name;
     protected Coordinates coordinates;
@@ -9,5 +9,11 @@ public class Aircraft implements Flyable {
         this.id = p_id;
         this.name = p_name;
         this.coordinates = p_coordinates;
+    }
+    
+    @Override
+    public void updateConditions() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'updateConditions'");
     }
 }
