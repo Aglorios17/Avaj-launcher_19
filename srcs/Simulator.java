@@ -7,18 +7,16 @@ import java.util.List;
 public class Simulator {   
     public static void main(String[] args) {
         try {
-            int count = 0;
-            int runs = 0; 
-
             if (args.length != 1)
                 throw new Exception("Arguments error.");
     
             String filePath = new String(args[0]);
             List<String> lines = Files.readAllLines(Paths.get(filePath));
 
+            int count = 0;
+            int runs = 0; 
             ArrayList<Flyable[]> Flyables = new ArrayList<Flyable[]>();
-    
-            count = 0;
+
             for (String line : lines) {
                 if (line.isBlank() || line.trim().isEmpty())
                     continue;
