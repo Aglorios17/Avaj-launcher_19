@@ -1,6 +1,6 @@
 package srcs;
 
-public class Aircraft extends Flyable {
+public class Aircraft implements Flyable {
     protected long id;
     protected String name;
     protected Coordinates coordinates;
@@ -9,12 +9,14 @@ public class Aircraft extends Flyable {
         this.name = p_name;
         this.coordinates = p_coordinates;
     }
-    public long getid() {
-        return this.id;
-    }
     @Override
     public void updateConditions() {
         // TODO Auto-generated method stub 
         throw new UnsupportedOperationException("Unimplemented method 'updateConditions'");
+    }
+    @Override
+    public void registerTower(WeatherTower[] p_tower) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'registerTower'");
     }
 }
