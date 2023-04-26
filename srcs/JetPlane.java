@@ -4,5 +4,25 @@ public class JetPlane extends Aircraft {
     public JetPlane(long p_id, String p_name, Coordinates p_coordinates) {
         super(p_id, p_name, p_coordinates);
     }
-    public void updateConditions() {}
+    public void updateConditions() {
+        switch (WeatherProvider.getWeatherProvider().getCurrentWeather(super.coordinates)){
+            case "SUN":
+                super.coordinates.setHeight(super.coordinates.getHeight() + 2);
+                super.coordinates.setLatitude(super.coordinates.getLatitude() + 10);
+                System.out.println("JetPlane#"+ super.name +" (" + super.id + "):" + " I'm feeling supersonic, gotta love the sunny skies!");
+                break;               
+            case "RAIN":
+                super.coordinates.setLatitude(super.coordinates.getLatitude() + 5);
+                System.out.println("JetPlane#"+ super.name +" (" + super.id + "):" + " I hope the rain doesn't wash off my new coat of paint!");
+                break;
+            case "FOG":
+                super.coordinates.setLatitude(super.coordinates.getLatitude() + 1);
+                System.out.println("JetPlane#"+ super.name +" (" + super.id + "):" + " I feel like a fish in a cloud-filled aquarium up here!");
+                break;
+            case "SNOW":
+                super.coordinates.setHeight(super.coordinates.getHeight() - 7);
+                System.out.println("JetPlane#"+ super.name +" (" + super.id + "):" + " I'm a JetPlane, not a SnowPlane!");
+                break;
+        }
+    }
 }

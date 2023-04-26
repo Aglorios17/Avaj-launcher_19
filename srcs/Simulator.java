@@ -7,6 +7,7 @@ import java.util.List;
 public class Simulator {   
     public static void main(String[] args) {
         try {
+            // PARSER
             if (args.length != 1)
                 throw new Exception("Arguments error.");
     
@@ -15,7 +16,7 @@ public class Simulator {
 
             int count = 0;
             int runs = 0; 
-            ArrayList<Flyable[]> Flyables = new ArrayList<Flyable[]>();
+            List<Flyable> Flyables = new ArrayList<Flyable>();
 
             for (String line : lines) {
                 if (line.isBlank() || line.trim().isEmpty())
@@ -52,12 +53,24 @@ public class Simulator {
                 else
                     throw new Exception("Aircraft type error.");
             }
+            
+            // SIMULATOR
             System.out.println("Number of runs : " + runs);
-            for (Flyable[] aircrafts : Flyables) {
-                for (Flyable aircraft : aircrafts) {
-                  System.out.println(aircraft);
-                }
+            for (Flyable aircrafts : Flyables)
+                  System.out.println(aircrafts);
+            System.out.println("==========================");
+            System.out.println("==== Start Simulation ====");
+            System.out.println("==========================");
+            for (int i = 1; i <= runs; i++)
+            {
+                System.out.println("======== Run " + i + " =========");
+                for (Flyable aircraft : Flyables)
+                        aircraft.updateConditions();
+                System.out.println("========================");
             }
+            System.out.println("========================");
+            System.out.println("==== End Simulation ====");
+            System.out.println("========================");
 
           } catch (Exception e) {
             System.out.println("An error occurred.");
