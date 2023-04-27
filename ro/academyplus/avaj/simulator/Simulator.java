@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Simulator {   
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws MyException, IOException{
         try {
             // redirect output
             PrintStream out = new PrintStream(new FileOutputStream("simulation.txt"));
@@ -65,27 +65,30 @@ public class Simulator {
             System.out.println("==========================");
             System.out.println("==== Start Simulation ====");
             System.out.println("==========================");
-            Tower T = new Tower();
             WeatherTower WT = new WeatherTower();
             WT.actualWeather();
             for (Flyable aircraft : Flyables)
             {
-                T.register(aircraft);
+                WT.register(aircraft);
                 aircraft.registerTower(WT);
             }
             for (int i = 1; i <= runs; i++)
             {
                 System.out.println("======== Run " + i + " =========");
-                T.conditionChanged();
+                WT.conditionChanged();
                 System.out.println("========================");
             }
-            System.out.println("========================");
-            System.out.println("==== End Simulation ====");
-            System.out.println("========================");
+            System.out.println("==========================");
+            System.out.println("===== End Simulation =====");
+            System.out.println("==========================");
 
           } catch (MyException e) {
             System.out.println("An error occurred.");
             System.out.println(e.getMessage());
-          }
+          } catch (IOException e) {
+			System.out.println("ERROR: I can't find " + args[0]);
+          }catch (NumberFormatException e) {
+            System.out.println("The string cannot be parsed as an integer.");
+        }
     }
 }

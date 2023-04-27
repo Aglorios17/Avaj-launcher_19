@@ -14,57 +14,60 @@ Tower says: JetPlane#J2(8) registered to weather tower.
 Tower says: Helicopter#H4(9) registered to weather tower.
 ======== Run 1 =========
 Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
-Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
-JetPlane#J1 (3): I feel like a fish in a cloud-filled aquarium up here!
+Baloon#B2 (2): Why did I think hot air rises in a snowstorm?
+JetPlane#J1 (3): I'm a JetPlane, not a SnowPlane!
 Helicopter#H1 (4): Why did I think flying in a winter wonderland was a good idea?
-Helicopter#H2 (5): Looks like I need to switch on my roto-lights!
-Helicopter#H3 (6): I'm feeling so fly, I think I'll go for a rotor-cruise!
-Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
+Helicopter#H2 (5): Why did I think flying in a winter wonderland was a good idea?
+Helicopter#H3 (6): Looks like I need to switch on my roto-lights!
+Baloon#B3 (7): I'm ballooning with joy in this sunny, sky-high paradise!
 JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
-Helicopter#H4 (9): Why did I think flying in a winter wonderland was a good idea?
+Helicopter#H4 (9): I guess it's raining cats and helicopters now!
 ========================
 ======== Run 2 =========
-Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
-Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
+Baloon#B1 (1): I'm ballooning with joy in this sunny, sky-high paradise!
+Baloon#B2 (2): I guess I picked the wrong day for an up-in-the-air car wash!
 JetPlane#J1 (3): I hope the rain doesn't wash off my new coat of paint!
 Helicopter#H1 (4): Why did I think flying in a winter wonderland was a good idea?
 Helicopter#H1(4) landing.
 Tower says: Helicopter#H1(4) unregistered from weather tower.
 Helicopter#H3 (6): I'm feeling so fly, I think I'll go for a rotor-cruise!
 Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
-JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
-Helicopter#H4 (9): I'm feeling so fly, I think I'll go for a rotor-cruise!
+JetPlane#J2 (8): I hope the rain doesn't wash off my new coat of paint!
+Helicopter#H4 (9): Looks like I need to switch on my roto-lights!
 ========================
 ======== Run 3 =========
-Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
-Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
-JetPlane#J1 (3): I hope the rain doesn't wash off my new coat of paint!
-Helicopter#H2 (5): I guess it's raining cats and helicopters now!
-Helicopter#H3 (6): I'm feeling so fly, I think I'll go for a rotor-cruise!
-Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
-JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
-Helicopter#H4 (9): Why did I think flying in a winter wonderland was a good idea?
+Baloon#B1 (1): I guess I picked the wrong day for an up-in-the-air car wash!
+Baloon#B2 (2): Why did I think hot air rises in a snowstorm?
+JetPlane#J1 (3): I feel like a fish in a cloud-filled aquarium up here!
+Helicopter#H2 (5): Why did I think flying in a winter wonderland was a good idea?
+Helicopter#H3 (6): Looks like I need to switch on my roto-lights!
+Baloon#B3 (7): Why did I think hot air rises in a snowstorm?
+JetPlane#J2 (8): I feel like a fish in a cloud-filled aquarium up here!
+Helicopter#H4 (9): I'm feeling so fly, I think I'll go for a rotor-cruise!
 ========================
 ======== Run 4 =========
-Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
-Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
-JetPlane#J1 (3): I hope the rain doesn't wash off my new coat of paint!
-Helicopter#H2 (5): I guess it's raining cats and helicopters now!
+Baloon#B1 (1): Why did I think hot air rises in a snowstorm?
+Baloon#B2 (2): I guess I picked the wrong day for an up-in-the-air car wash!
+JetPlane#J1 (3): I'm feeling supersonic, gotta love the sunny skies!
+Helicopter#H2 (5): Why did I think flying in a winter wonderland was a good idea?
 Helicopter#H3 (6): I'm feeling so fly, I think I'll go for a rotor-cruise!
 Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
 JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
 Helicopter#H4 (9): I'm feeling so fly, I think I'll go for a rotor-cruise!
 ========================
 ======== Run 5 =========
-Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
-Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
-JetPlane#J1 (3): I hope the rain doesn't wash off my new coat of paint!
-Helicopter#H2 (5): I guess it's raining cats and helicopters now!
-Helicopter#H3 (6): Why did I think flying in a winter wonderland was a good idea?
-Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
-JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
-Helicopter#H4 (9): Why did I think flying in a winter wonderland was a good idea?
+Baloon#B1 (1): I guess I picked the wrong day for an up-in-the-air car wash!
+Baloon#B1(1) landing.
+Tower says: Baloon#B1(1) unregistered from weather tower.
+JetPlane#J1 (3): I'm feeling supersonic, gotta love the sunny skies!
+Helicopter#H2 (5): Why did I think flying in a winter wonderland was a good idea?
+Helicopter#H2(5) landing.
+Tower says: Helicopter#H2(5) unregistered from weather tower.
+Baloon#B3 (7): Why did I think hot air rises in a snowstorm?
+Baloon#B3(7) landing.
+Tower says: Baloon#B3(7) unregistered from weather tower.
+Helicopter#H4 (9): I'm feeling so fly, I think I'll go for a rotor-cruise!
 ========================
-========================
-==== End Simulation ====
-========================
+==========================
+===== End Simulation =====
+==========================
