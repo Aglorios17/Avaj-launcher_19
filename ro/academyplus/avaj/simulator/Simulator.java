@@ -7,7 +7,12 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Simulator {   
+public class Simulator {
+    private static int count = 0;
+    private static int runs = 0;
+    private static List<Flyable> Flyables = new ArrayList<Flyable>();
+    private static WeatherTower WT = new WeatherTower();
+
     public static void main(String[] args) throws MyException, IOException{
         try {
             // redirect output
@@ -21,9 +26,6 @@ public class Simulator {
             List<String> lines = Files.readAllLines(Paths.get(filePath));
             if (lines.size() <= 0)
                 throw new MyException("Empty file error.");
-            int count = 0;
-            int runs = 0; 
-            List<Flyable> Flyables = new ArrayList<Flyable>();
 
             for (String line : lines) {
                 if (line.isBlank() || line.trim().isEmpty())
@@ -66,7 +68,6 @@ public class Simulator {
             System.out.println("==========================");
             System.out.println("==== Start Simulation ====");
             System.out.println("==========================");
-            WeatherTower WT = new WeatherTower();
             WT.actualWeather();
             for (Flyable aircraft : Flyables)
             {
