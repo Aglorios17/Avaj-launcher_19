@@ -25,4 +25,12 @@ public class Helicopter extends Aircraft {
                 break;
         }
     }
+    @Override
+    public long getid() { return super.id; }
+    @Override
+    public String getname() { return super.name; }
+    @Override
+    public Coordinates getcoordinates() { return super.coordinates; }
+    @Override
+    public String gettype() { return "Helicopter"; }
 }

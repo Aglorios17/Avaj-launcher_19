@@ -61,11 +61,21 @@ public class Simulator {
             System.out.println("==========================");
             System.out.println("==== Start Simulation ====");
             System.out.println("==========================");
+            Tower T = new Tower();
+            for (Flyable aircraft : Flyables)
+                T.register(aircraft);
             for (int i = 1; i <= runs; i++)
             {
                 System.out.println("======== Run " + i + " =========");
-                for (Flyable aircraft : Flyables)
-                        aircraft.updateConditions();
+                for (int j = 0; j < Flyables.size(); j++)
+                {
+                        Flyables.get(j).updateConditions();
+                        if (Flyables.get(j).getcoordinates().getHeight() <= 0)
+                        {
+                            T.unregister(Flyables.get(j));
+                            Flyables.remove(Flyables.get(j--));
+                        }
+                }
                 System.out.println("========================");
             }
             System.out.println("========================");

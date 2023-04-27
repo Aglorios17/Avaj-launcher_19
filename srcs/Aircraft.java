@@ -11,4 +11,6 @@ public abstract class Aircraft extends Flyable {
     }
     @Override
     public abstract void updateConditions();
+
+    
 }
