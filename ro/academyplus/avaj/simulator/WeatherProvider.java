@@ -1,4 +1,6 @@
-package srcs;
+package ro.academyplus.avaj.simulator;
+
+import java.util.Arrays;
 
 public class WeatherProvider {
     private String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
@@ -21,5 +23,9 @@ public class WeatherProvider {
     public static WeatherProvider getWeatherProvider() {
         WeatherProvider weather = new WeatherProvider();
         return weather;
+    }
+    public void getActualWeather()
+    {
+        System.out.println("Actual weather : " + Arrays.toString(weather));
     }
 }

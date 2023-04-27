@@ -1,4 +1,4 @@
-package srcs;
+package ro.academyplus.avaj.simulator;
 
 public abstract class Flyable {
     protected WeatherTower weatherTower;

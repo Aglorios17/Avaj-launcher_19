@@ -1,4 +1,4 @@
-package srcs;
+package ro.academyplus.avaj.simulator;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,10 +19,7 @@ public class Tower {
         {
                 observers.get(j).updateConditions();
                 if (observers.get(j).getcoordinates().getHeight() <= 0)
-                {
                     unregister(observers.get(j));
-                    observers.remove(observers.get(j--));
-                }
         }
     }
 }

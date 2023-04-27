@@ -1,4 +1,4 @@
-package srcs;
+package ro.academyplus.avaj.simulator;
 
 public abstract class Aircraft extends Flyable {
     protected long id;

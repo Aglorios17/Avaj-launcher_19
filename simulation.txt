@@ -1,0 +1,70 @@
+Number of runs : 5
+==========================
+==== Start Simulation ====
+==========================
+Actual weather : [RAIN, FOG, SUN, SNOW]
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: JetPlane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: JetPlane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+======== Run 1 =========
+Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
+Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
+JetPlane#J1 (3): I feel like a fish in a cloud-filled aquarium up here!
+Helicopter#H1 (4): Why did I think flying in a winter wonderland was a good idea?
+Helicopter#H2 (5): Looks like I need to switch on my roto-lights!
+Helicopter#H3 (6): I'm feeling so fly, I think I'll go for a rotor-cruise!
+Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
+JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
+Helicopter#H4 (9): Why did I think flying in a winter wonderland was a good idea?
+========================
+======== Run 2 =========
+Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
+Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
+JetPlane#J1 (3): I hope the rain doesn't wash off my new coat of paint!
+Helicopter#H1 (4): Why did I think flying in a winter wonderland was a good idea?
+Helicopter#H1(4) landing.
+Tower says: Helicopter#H1(4) unregistered from weather tower.
+Helicopter#H3 (6): I'm feeling so fly, I think I'll go for a rotor-cruise!
+Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
+JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
+Helicopter#H4 (9): I'm feeling so fly, I think I'll go for a rotor-cruise!
+========================
+======== Run 3 =========
+Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
+Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
+JetPlane#J1 (3): I hope the rain doesn't wash off my new coat of paint!
+Helicopter#H2 (5): I guess it's raining cats and helicopters now!
+Helicopter#H3 (6): I'm feeling so fly, I think I'll go for a rotor-cruise!
+Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
+JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
+Helicopter#H4 (9): Why did I think flying in a winter wonderland was a good idea?
+========================
+======== Run 4 =========
+Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
+Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
+JetPlane#J1 (3): I hope the rain doesn't wash off my new coat of paint!
+Helicopter#H2 (5): I guess it's raining cats and helicopters now!
+Helicopter#H3 (6): I'm feeling so fly, I think I'll go for a rotor-cruise!
+Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
+JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
+Helicopter#H4 (9): I'm feeling so fly, I think I'll go for a rotor-cruise!
+========================
+======== Run 5 =========
+Baloon#B1 (1): I didn't sign up for this! I thought I was lighter than air, not fog!
+Baloon#B2 (2): I didn't sign up for this! I thought I was lighter than air, not fog!
+JetPlane#J1 (3): I hope the rain doesn't wash off my new coat of paint!
+Helicopter#H2 (5): I guess it's raining cats and helicopters now!
+Helicopter#H3 (6): Why did I think flying in a winter wonderland was a good idea?
+Baloon#B3 (7): I guess I picked the wrong day for an up-in-the-air car wash!
+JetPlane#J2 (8): I'm feeling supersonic, gotta love the sunny skies!
+Helicopter#H4 (9): Why did I think flying in a winter wonderland was a good idea?
+========================
+========================
+==== End Simulation ====
+========================

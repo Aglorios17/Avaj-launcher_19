@@ -1,4 +1,4 @@
-package srcs;
+package ro.academyplus.avaj.simulator;
 
 public class AircraftFactory {
     private static int id = 1;

@@ -1,15 +1,21 @@
-package srcs;
+package ro.academyplus.avaj.simulator;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Simulator {   
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         try {
+            // redirect output
+            PrintStream out = new PrintStream(new FileOutputStream("simulation.txt"));
+            System.setOut(out);
             // PARSER
             if (args.length != 1)
-                throw new Exception("Arguments error.");
+                throw new MyException("Arguments error.");
     
             String filePath = new String(args[0]);
             List<String> lines = Files.readAllLines(Paths.get(filePath));
@@ -27,21 +33,21 @@ public class Simulator {
                 if (count == 0)
                 {
                     if (count == 1 || arr.length != 1)
-                        throw new Exception("Runs number error.");
+                        throw new MyException("Runs number error.");
                     count += 1;
                     runs = Integer.parseInt(arr[0]);
                 }
                 else if (arr[0].equals("Baloon") || arr[0].equals("Helicopter") || arr[0].equals("JetPlane"))
                 {
                     if (arr.length != 5)
-                        throw new Exception("Aircraft arguments error.");
+                        throw new MyException("Aircraft arguments error.");
 
                     int longitude = Integer.parseInt(arr[2]);
                     int latitude = Integer.parseInt(arr[3]);
                     int height = Integer.parseInt(arr[4]);
 
                     if (longitude < 0 || latitude < 0 || height < 0)
-                        throw new Exception("Coordinates error.");
+                        throw new MyException("Coordinates error.");
                     if (height > 100)
                         height = 100;
 
@@ -51,7 +57,7 @@ public class Simulator {
 
                 }
                 else
-                    throw new Exception("Aircraft type error.");
+                    throw new MyException("Aircraft type error.");
             }
             
             // SIMULATOR
@@ -61,6 +67,7 @@ public class Simulator {
             System.out.println("==========================");
             Tower T = new Tower();
             WeatherTower WT = new WeatherTower();
+            WT.actualWeather();
             for (Flyable aircraft : Flyables)
             {
                 T.register(aircraft);
@@ -76,7 +83,7 @@ public class Simulator {
             System.out.println("==== End Simulation ====");
             System.out.println("========================");
 
-          } catch (Exception e) {
+          } catch (MyException e) {
             System.out.println("An error occurred.");
             System.out.println(e.getMessage());
           }
