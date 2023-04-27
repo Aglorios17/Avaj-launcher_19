@@ -19,7 +19,8 @@ public class Simulator {
     
             String filePath = new String(args[0]);
             List<String> lines = Files.readAllLines(Paths.get(filePath));
-
+            if (lines.size() <= 0)
+                throw new MyException("Empty file error.");
             int count = 0;
             int runs = 0; 
             List<Flyable> Flyables = new ArrayList<Flyable>();

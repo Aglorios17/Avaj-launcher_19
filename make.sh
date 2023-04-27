@@ -1,1 +1,1 @@
-find * -name "*.java" > sources.txt && javac @sources.txt && java ro/academyplus/avaj/simulator.Simulator scenario.txt && rm -rf ro/academyplus/avaj/simulator/*.class && rm -rf sources.txt && cat -e simulation.txt
+find * -name "*.java" > sources.txt && javac @sources.txt && java ro/academyplus/avaj/simulator.Simulator  scenario.txt && rm -rf ro/academyplus/avaj/simulator/*.class && rm -rf sources.txt && cat -e simulation.txt
