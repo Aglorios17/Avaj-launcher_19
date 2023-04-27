@@ -56,26 +56,20 @@ public class Simulator {
             
             // SIMULATOR
             System.out.println("Number of runs : " + runs);
-            for (Flyable aircrafts : Flyables)
-                  System.out.println(aircrafts);
             System.out.println("==========================");
             System.out.println("==== Start Simulation ====");
             System.out.println("==========================");
             Tower T = new Tower();
+            WeatherTower WT = new WeatherTower();
             for (Flyable aircraft : Flyables)
+            {
                 T.register(aircraft);
+                aircraft.registerTower(WT);
+            }
             for (int i = 1; i <= runs; i++)
             {
                 System.out.println("======== Run " + i + " =========");
-                for (int j = 0; j < Flyables.size(); j++)
-                {
-                        Flyables.get(j).updateConditions();
-                        if (Flyables.get(j).getcoordinates().getHeight() <= 0)
-                        {
-                            T.unregister(Flyables.get(j));
-                            Flyables.remove(Flyables.get(j--));
-                        }
-                }
+                T.conditionChanged();
                 System.out.println("========================");
             }
             System.out.println("========================");

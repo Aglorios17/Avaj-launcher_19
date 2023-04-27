@@ -5,7 +5,7 @@ public class JetPlane extends Aircraft {
         super(p_id, p_name, p_coordinates);
     }
     public void updateConditions() {
-        switch (WeatherProvider.getWeatherProvider().getCurrentWeather(super.coordinates)){
+        switch (weatherTower.getWeather(super.coordinates)){
             case "SUN":
                 super.coordinates.setHeight(super.coordinates.getHeight() + 2);
                 super.coordinates.setLatitude(super.coordinates.getLatitude() + 10);
