@@ -1,0 +1,4 @@
+1200
+Baloon Siu 2 3 1
+Helicopter Hiu 22 400 1
+JetPlane Jiu 30 1 100

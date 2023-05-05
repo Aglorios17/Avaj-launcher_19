@@ -10,8 +10,8 @@ import java.util.List;
 public class Simulator {
     private static int count = 0;
     private static int runs = 0;
-    private static List<Flyable> Flyables = new ArrayList<Flyable>();
-    private static WeatherTower WT = new WeatherTower();
+    private static List<Flyable> flyables = new ArrayList<Flyable>();
+    private static WeatherTower weatherTower = new WeatherTower();
 
     public static void main(String[] args) throws MyException, IOException{
         try {
@@ -56,7 +56,7 @@ public class Simulator {
 
                     Coordinates coor = new Coordinates(longitude, latitude, height);
                     AircraftFactory myFactory = new AircraftFactory();
-                    Flyables.add(myFactory.newAircraft(arr[0], arr[1], coor));
+                    flyables.add(myFactory.newAircraft(arr[0], arr[1], coor));
 
                 }
                 else
@@ -64,26 +64,29 @@ public class Simulator {
             }
             
             // SIMULATOR
+            /*
             System.out.println("Number of runs : " + runs);
             System.out.println("==========================");
             System.out.println("==== Start Simulation ====");
             System.out.println("==========================");
-            WT.actualWeather();
-            for (Flyable aircraft : Flyables)
+            */
+            //weatherTower.actualWeather();
+            for (Flyable aircraft : flyables)
             {
-                WT.register(aircraft);
-                aircraft.registerTower(WT);
+                weatherTower.register(aircraft);
+                aircraft.registerTower(weatherTower);
             }
             for (int i = 1; i <= runs; i++)
             {
-                System.out.println("======== Run " + i + " =========");
-                WT.conditionChanged();
-                System.out.println("========================");
+                //System.out.println("======== Run " + i + " =========");
+                weatherTower.conditionChanged();
+                //System.out.println("========================");
             }
+            /*
             System.out.println("==========================");
             System.out.println("===== End Simulation =====");
             System.out.println("==========================");
-
+            */
           } catch (MyException e) {
             System.out.println("An error occurred.");
             System.out.println(e.getMessage());

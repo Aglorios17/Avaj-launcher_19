@@ -19,7 +19,7 @@ public class Tower {
         {
                 observers.get(j).updateConditions();
                 if (observers.get(j).getcoordinates().getHeight() <= 0)
-                    unregister(observers.get(j));
+                    unregister(observers.get(j--));
         }
     }
 }
